@@ -1,0 +1,3 @@
+ro.hardware.keystore=msm8953
+persist.sys.usb.config=adb,mtp
+ro.display.series=Tab 4 10 Plus

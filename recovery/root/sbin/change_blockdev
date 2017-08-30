@@ -1,0 +1,9 @@
+#!/sbin/sh
+
+LOG=/tmp/recovery.log
+
+# change /dev/block/bootdevice to be a symbolic link. qseecomd requires that
+rm -Rf /dev/block/bootdevice >> $LOG
+ln -vs /dev/block/platform/soc/7824900.sdhci /dev/block/bootdevice >> $LOG
+
+
