@@ -14,7 +14,6 @@
 /misc 		    emmc	  /dev/block/bootdevice/by-name/misc
 
 /frp            emmc      /dev/block/bootdevice/by-name/config               flags=display="Config";backup=1
-/lenovocust     ext4      /dev/block/bootdevice/by-name/lenovocust           flags=display="Lenovo Custom";backup=1 
 
 /firmware       vfat      /dev/block/bootdevice/by-name/modem                flags=display="Firmware";mounttodecrypt
 /persist        ext4      /dev/block/bootdevice/by-name/persist              flags=display="Persist";backup=1

@@ -15,4 +15,4 @@
 #
 
 PRODUCT_COPY_FILES += \
-    device/lenovo/tb_8704x/kernel:kernel
+    device/lenovo/tb_8504x/kernel:kernel

@@ -25,11 +25,11 @@
 
 # Bootloader
 TARGET_NO_BOOTLOADER := true
-TARGET_BOOTLOADER_BOARD_NAME := MSM8953
+TARGET_BOOTLOADER_BOARD_NAME := MSM8937
 
 # Platform
-TARGET_BOARD_PLATFORM := msm8953
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno506
+TARGET_BOARD_PLATFORM := msm8937
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno306
 TARGET_BOARD_SUFFIX := _64
 #TARGET_PLATFORM_DEVICE_BASE := /devices/soc0/
 
@@ -53,29 +53,29 @@ TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 
 # Kernel
 BOARD_KERNEL_BASE := 0x80000000
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 earlycon=msm_hsl_uart,0x78af000 androidboot.selinux=permissive enforcing=0
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 earlycon=msm_hsl_uart,0x78B0000 androidboot.selinux=permissive enforcing=0
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS :=  --kernel_offset 0x08000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --second_offset 0x00f00000
-TARGET_PREBUILT_KERNEL := device/lenovo/tb_8704x/kernel
+TARGET_PREBUILT_KERNEL := device/lenovo/tb_8504x/kernel
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x4000000
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x4000000
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 4080218112
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 56823880704
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3758096384
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 26227481600
 BOARD_CACHEIMAGE_PARTITION_SIZE := 268435456
 BOARD_PERSISTIMAGE_PARTITION_SIZE := 33554432
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/lenovo/tb_8704x/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/lenovo/tb_8504x/recovery.fstab
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := false
 TW_INCLUDE_NTFS_3G := true
 TW_IGNORE_MISC_WIPE_DATA := true
 
 # SE policy
-BOARD_SEPOLICY_DIRS += device/lenovo/tb_8704x/sepolicy
+BOARD_SEPOLICY_DIRS += device/lenovo/tb_8504x/sepolicy
 
 # TWRP
 TW_THEME := portrait_hdpi
