@@ -7,7 +7,7 @@ Basic   | Spec Sheet
 -------:|:-------------------------
 CHIPSET | Qualcomm MSM8917 Snapdragon 425
 CPU     | Quad-core 2.0 GHz Cortex-A53
-GPU     | Adreno 306
+GPU     | Adreno 308
 Memory  | 2 GB
 Shipped Android Version | Android 7.0
 Storage | 16 GB
